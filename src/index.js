@@ -4,7 +4,7 @@ import ChangeButton from './components/button'
 const App = () => {
   return (
     <div>
-      <ChangeButton />
+      <ChangeButton startText="1" endText="2"/>
     </div>
   )
 }

@@ -20,13 +20,15 @@ import "./change_button.css";
 // }
 
 // export default ChangeButton;
-export default function ChangeButton() {
-  const [status, setStatus] = useState("登入");
+export default function ChangeButton(props) {
+  const start=props.startText
+  const end= props.endText
+  const [status, setStatus] = useState(start);
   return (
     <div
       className="button-container"
       onClick={() => {
-        setStatus(status==='登入'?'登出':'登入')
+        setStatus(status===start?end:start)
       }}
     >
       <span>{status}</span>
