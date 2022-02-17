@@ -1,3 +1,6 @@
 import ChangeButton from './button';
+import PageTable from './PageTable';
 
-export default ChangeButton;
+export  {ChangeButton,
+    PageTable
+}

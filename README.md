@@ -29,3 +29,7 @@ npm version major     回车就可以了
 //最后
 npm publish
  ```
+ ## .babelrc文件用于展示ant design的样式
+ 加入["import", {"libraryName": "antd", "libraryDirectory": "lib", "style": true }]配置是必要的，该配置使用babel-plugin-import 按需加载 antd样式，不加该配置信息antd组建的样式会无法显示。
+
+babel-plugin-import 在 babel 运行时，将类似import { ModuleName } from 'libiaryName'的代码转化为组件所在的路径，这样实际引用的就是这个组件的模块而不是整个 Library
